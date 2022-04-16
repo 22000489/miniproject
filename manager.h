@@ -22,6 +22,12 @@ void readProduct(Product *p[], int count); // 하나의 제품 출력 함수
 
 void listProduct(Product *p[], int count); // 전체 등록된 제품 리스트 출력
 
+void searchName(Product *p[], int count); // 제품이름 검색
+
+void searchWay(Product *p[], int count); // 배송방법 검색
+
+void searchCost(Product *p[], int count); // 제품가격 검색
+
 void saveFile(Product *p[], int count); // 파일 저장
 
 int loadData(Product *p[]); // 파일 불러오기
