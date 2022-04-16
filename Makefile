@@ -1,4 +1,3 @@
-
 CC = gcc
 shop : main.c manager.o
 	$(CC) -o $@ $^
