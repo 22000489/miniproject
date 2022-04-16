@@ -77,7 +77,6 @@ int updateProduct(Product *p[]){
     getchar();
     printf("제품중량은? ");
     scanf("%s", p[num-1]->weight);
-    // getchar();
     printf("판매가격은? ");
     scanf("%d", &p[num-1]->cost);
     printf("배송방법은? ");
