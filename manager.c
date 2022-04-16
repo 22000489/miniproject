@@ -104,24 +104,6 @@ printf("No 제품명       중량  판매가격  배송방법\n");
     }
 } // 전체 등록된 제품 리스트 출력
 
-
-void saveFile(Product *p[], int count){
-    FILE *fp;
-    fp = fopen("product.txt", "w");
-    for(int i=0; i<count; i++){
-        if(p[i]->way == -1) continue;
-    fprintf(fp, "%d %2s\n", p[i]->order, p[i]->name);
-    fprintf(fp, "%s\n", p[i]->weight);
-    fprintf(fp, "%d\n%d\n", p[i]->cost, p[i]->way);
-    fprintf(fp, "%s:", p[i]->tag);
-    if(i == count-1)
-    continue;
-    fprintf(fp,"\n");
-    }
-    fclose(fp);
-    printf("저장됨!\n");
-}
-
 int loadData(Product *p[]){
     int i=0;
     int num;
