@@ -39,6 +39,15 @@ int main(void){
         else if (menu == 5){
             saveFile(p, count);
         }
+	else if(menu == 6)
+            searchName(p, count);
+        
+	else if(menu == 7)
+            searchWay(p, count);
+        
+	else if(menu == 8)
+            searchCost(p, count);
+
         else if(menu == 9)
             readProduct(p, count);
     }
